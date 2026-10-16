@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Сборка ПК</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Сборка ПК</h1>
+
+<label>Процессор:</label>
+<select id="cpu">
+  <option data-socket="AM4" data-watt="65" data-price="9000">Ryzen 5 5600 - 9000 ₽</option>
+  <option data-socket="AM5" data-watt="65" data-price="17000">Ryzen 5 7600 - 17000 ₽</option>
+  <option data-socket="LGA1700" data-watt="65" data-price="11000">Core i5-12400F - 11000 ₽</option>
+</select>
+
+<label>Материнская плата:</label>
+<select id="mb">
+  <option data-socket="AM4" data-ram="DDR4" data-price="8500">B550 (DDR4) - 8500 ₽</option>
+  <option data-socket="AM5" data-ram="DDR5" data-price="12000">B650 (DDR5) - 12000 ₽</option>
+  <option data-socket="LGA1700" data-ram="DDR4" data-price="9500">B660 (DDR4) - 9500 ₽</option>
+</select>
+
+<label>Оперативная память:</label>
+<select id="ram">
+  <option data-ram="DDR4" data-price="3000">16 ГБ DDR4 - 3000 ₽</option>
+  <option data-ram="DDR5" data-price="4500">16 ГБ DDR5 - 4500 ₽</option>
+</select>
+
+<label>Видеокарта:</label>
+<select id="gpu">
+  <option data-watt="75" data-price="15000">GTX 1650 - 15000 ₽</option>
+  <option data-watt="170" data-price="28000">RTX 3060 - 28000 ₽</option>
+  <option data-watt="220" data-price="62000">RTX 4070 Super - 62000 ₽</option>
+</select>
+
+<label>Блок питания:</label>
+<select id="psu">
+  <option data-watt="450" data-price="3500">450 Вт - 3500 ₽</option>
+  <option data-watt="650" data-price="6000">650 Вт - 6000 ₽</option>
+  <option data-watt="750" data-price="8000">750 Вт - 8000 ₽</option>
+</select>
+
+<button onclick="check()">Проверить</button>
+
+<div id="result"></div>
+<div id="price"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

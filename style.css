@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 0 12px;
+  background: #f0f4f8;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 18px;
+  background: #2f5bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1f44cc;
+}
+
+#result {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#price {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.good {
+  background: #c8f7d4;
+  color: #0b6b3a;
+}
+
+.bad {
+  background: #ffd1d1;
+  color: #a02020;
+}
